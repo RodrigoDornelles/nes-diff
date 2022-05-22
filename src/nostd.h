@@ -5,9 +5,7 @@ int strcmp(const char *l, const char *r)
 
 int strcmp(const char *l, const char *r)
 {
-    while(1) {
-        if(*l==*r && *l)
-            break;
+    while(*l==*r && *l) {
         l++;
         r++;
     }
