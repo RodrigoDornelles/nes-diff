@@ -5,7 +5,12 @@ int strcmp(const char *l, const char *r)
 
 int strcmp(const char *l, const char *r)
 {
-	for (; *l==*r && *l; l++, r++);
+    while(1) {
+        if(*l==*r && *l)
+            break;
+        l++;
+        r++;
+    }
 	return *(unsigned char *)l - *(unsigned char *)r;
 }
 #endif
